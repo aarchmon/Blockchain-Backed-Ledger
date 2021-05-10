@@ -178,21 +178,19 @@ sender_input = st.text_input("Sender")
 receiver_input = st.text_input("Receiver")
 
 # Add an input area where you can get a value for `amount` from the user.
-amount_input = float(st.text_input("Amount"))
+amount_input = st.text_input("Amount")
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
     prev_block_hash = prev_block.hash_block()
 
-    # @TODO
     # Update `new_block` so that `Block` consists of an attribute named `record`
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
         record = Record(
             sender = sender_input, receiver = receiver_input, amount = amount_input
-        )
-        record = input_data,
+        ),
         creator_id = 42,
         prev_hash = prev_block_hash
     )
