@@ -42,7 +42,7 @@ import hashlib
 
 ![Main Page](./Images/overall_page.png)
 
-![Verification](./Images/verification.png)
+![Verification](./Images/validation.png)
 
 ---
 
