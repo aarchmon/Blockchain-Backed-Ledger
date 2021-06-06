@@ -40,7 +40,9 @@ import hashlib
 
 ## Examples
 
+![Main Page](./Images/overall_page.png)
 
+![Verification](./Images/validation.png)
 
 ---
 
